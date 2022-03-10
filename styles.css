@@ -1,11 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  all: unset;
+}
 
 .container {
   padding: 2.5rem 3.5rem;
+  position: relative;
+  height: 100%;
+}
+
+header {
+  height: 10vh;
+  font-family: 'Inconsolata', monospace;
+  text-transform: uppercase;
+  letter-spacing: -0.08em;
+  font-size: 1.3rem;
 }
 
 .hero {
@@ -13,14 +30,75 @@
   width: 100%;
   flex-direction: row;
   display: flex;
+  height: 80vh;
+  align-items: center;
+}
+.hero__left {
+  height: 100%;
+  width: 100%;
 }
 .hero__right {
-  max-width: 100%;
+  /* max-width: 100%; */
   height: 100%;
   display: flex;
   flex-direction: column;
+  font-family: 'Space Mono', monospace;
+}
+
+.hero__right .title {
+  line-height: 95px;
+  font-size: 4rem;
+  margin-bottom: 2.3rem;
+  font-weight: 700;
+  color: #333333;
+}
+
+.hero__right .about {
+  width: 65%;
+  line-height: 28px;
+  font-size: 1.4rem;
+  margin-bottom: 3.8rem;
+  text-align: left;
+  font-weight: 400;
+  color: #4f4f4f;
+}
+
+.hero__right .back-home {
+  color: white;
+  background-color: #333333;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  width: 15.1rem;
+  height: 4.2rem;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  font-size: 0.9rem;
+  transition: all 0.5s;
+}
+.hero__right .back-home:hover {
+  background-color: #333333ef;
 }
 
 #crow-img {
   width: 70%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 1.3rem;
+  color: #bdbdbd;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer #username a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #bdbdbdc2;
 }
